@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+ <html lang="en-us"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tip Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Istok+Web&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="tipCalc.css">
+    </head>
+    <body>
+        
+        <section id="container">
+            <h1>Tip Calculator</h1>
+            <div class="modify">
+                <label for="serviceSelect">How was the service?</label>
+                <br>
+                <select name="service" id="serviceSelect">
+                    <!-- service options dropdown -->
+                    <option selected disabled>-- Select an Option --</option>
+                    <option>Excellent - 18%</option>
+                    <option>Good - 15%</option>
+                    <option>Fair - 12%</option>
+                    <option>Poor - 10%</option>
+                </select>
+            </div>
+            <div class="modify">
+                <label for="amount">How much was the meal?</label>
+                <br>
+                <!-- input meal cost amount -->
+                <input type="number" id="amount" placeholder="Enter Amount"> 
+            </div>
+            <h2>Total Tip Amount:</h2>
+            <h3>$</h3>
+            <div class="modify">
+                <!-- calculate button -->
+                <button id="calcBtn">Calculate</button>
+            </div>
+            <!-- resset button -->
+            <button id="resetBtn">Reset</button>
+        </section>
+
+    <script src="tipCalc.js"></script>
+    </body>
+</html>
